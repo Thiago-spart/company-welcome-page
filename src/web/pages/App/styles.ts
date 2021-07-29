@@ -1,7 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 
-import { COLORS } from "assets/colors";
-
 export const GlobalStyle = createGlobalStyle`
 	 * {
     margin: 0;
@@ -10,9 +8,31 @@ export const GlobalStyle = createGlobalStyle`
 
 		&:focus-visible {
 			outline: 3px solid transparent;
-		 	box-shadow: 0 0 0 3px ${COLORS.white1000};
+		 	box-shadow: 0 0 0 3px var(white1000);
 		}
   }
+
+	:root {
+		--background: "#202124";
+		--white1000: "#ffffff";
+		--black1000: "#000000";
+
+		--gray50: "#d9e3e4";
+		--gray100: "#9ba9b4";
+		--gray200: "#6a6f82";
+		--gray300: "#a7a7a7";
+		--gray500: "#33363a";
+		--gray800: "#2b2c2f";
+
+		--discord: "#7289DA";
+		--github: "#181717";
+		--google: "#4285F4";
+
+		--linkedin: "#0A66C2";
+		--stackOverflow: "#F58025";
+		--dribbble: "#EA4C89";
+		--behance: "#1769FF";
+	}
 
 	html, body {
 		min-height: 100%;
@@ -24,14 +44,14 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: ${COLORS.background};
-    color: ${COLORS.white1000};
+    background: var(white1000);
+    color: var(black1000);
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
   }
 
 	a {
-		color: ${COLORS.white1000};
+		color: var(black1000);
 		text-decoration: none;
 	}
 
@@ -50,12 +70,12 @@ export const GlobalStyle = createGlobalStyle`
 	}
 
 	::-webkit-scrollbar-track {
-		background: ${COLORS.black1000}50;
+		background: var(black1000)50;
 		border-radius: 4px;
 	}
 
 	::-webkit-scrollbar-thumb {
-		background: ${COLORS.gray300};
+		background: var(gray300);
 		border-radius: 4px;
 	}
 

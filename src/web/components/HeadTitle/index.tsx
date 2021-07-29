@@ -6,6 +6,6 @@ interface Props {
 
 export const HeadTitle: React.FC<Props> = ({ title }) => (
 	<Head>
-		<title>{title} | Techmmunity</title>
+		<title>{title} | CompanyK</title>
 	</Head>
 );
